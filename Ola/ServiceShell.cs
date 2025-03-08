@@ -14,7 +14,7 @@ internal class ServiceShell(ILogger logger, MainService ola) : IHostedService
 
     private async Task ExecuteAsync(CancellationToken cancellationToken)
     {
-        logger.LogInformation("Attempting to resolve project ...");
+        logger.LogInformation("Executing Tool");
         await ola.ExecuteAsync(cancellationToken);
     }
 
